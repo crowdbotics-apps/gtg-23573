@@ -37,6 +37,7 @@ export default class Blank extends React.Component {
       <TextInput
         placeholder="Select your District"
         editable={false}
+        style={styles.TextInput_5}
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
@@ -47,5 +48,5 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: { paddingTop: 46 },
   TextInput_3: {},
-  TextInput_5: {}
+  TextInput_5: { paddingTop: 30 }
 })
