@@ -31,6 +31,7 @@ export default class Blank extends React.Component {
       <TextInput
         placeholder="Select your state"
         editable={false}
+        style={styles.TextInput_3}
         value={this.state.TextInput_3}
         onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
       />
@@ -46,7 +47,29 @@ export default class Blank extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  View_1: { paddingTop: 46 },
-  TextInput_3: {},
-  TextInput_5: { paddingTop: 30 }
+  View_1: {
+    paddingTop: 46,
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3
+  },
+  TextInput_3: {
+    marginBottom: 26,
+    borderWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 4,
+    borderBottomWidth: 4
+  },
+  TextInput_5: {
+    marginTop: 2,
+    paddingTop: 5,
+    borderWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 4,
+    borderBottomWidth: 4
+  }
 })
